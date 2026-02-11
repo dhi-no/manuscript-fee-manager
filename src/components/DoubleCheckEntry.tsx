@@ -111,7 +111,13 @@ export function DoubleCheckEntry({ magazine, issue, onBack }: Props) {
     if (work.firstEntry) {
       setSelectedWorkId(work.id);
       // フォームは空のままにして、入力者Bが独立して入力
-      resetForm();
+      setTitle('');
+      setAuthorId('');
+      setEditorId('');
+      setPages1C('');
+      setPages4C('');
+      setStartPage('');
+      setEndPage('');
     }
   };
 
